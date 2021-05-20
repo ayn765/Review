@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="BMW Test Suite">
+<listeners>
+    <listener class-name="reporting.Listeners"/>
+</listeners>
+    <test name="SprintFY21Q3">
+
+
+        <parameter name="browserName" value="chrome"/>
+        <parameter name="url" value="http://bmwusa.com"/>
+
+        <groups>
+            <run>
+                <include name="smoke"/>
+            </run>
+        </groups>
+
+        <classes>
+                        <class name="testBMW.TestDemo"/>
+        </classes>
+    </test>
+
+</suite>
